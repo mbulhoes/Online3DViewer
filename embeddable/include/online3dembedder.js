@@ -52,6 +52,7 @@ LoadOnline3DModels = function ()
 						}
 						viewer.EnableDraw (true);
 						viewer.Draw ();
+						document.dispatchEvent(new Event('viewerLoaded'));
 					}
 				};
 				
